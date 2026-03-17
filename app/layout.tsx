@@ -1,5 +1,10 @@
 import localFont from "next/font/local";
+import type { Metadata } from "next";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "POPS - LAB",
+};
 
 const fredoka = localFont({
   src: "./fonts/Fredoka-VariableFont_wdth,wght.ttf",
