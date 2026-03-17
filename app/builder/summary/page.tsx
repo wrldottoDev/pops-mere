@@ -3,7 +3,7 @@ import Link from "next/link";
 import { characters } from "@/data/characters";
 import { icecreams, type ConeType } from "@/data/icecreams";
 
-type Category = "hombre" | "mujer" | "otro";
+type Category = "hombre" | "mujer";
 
 type SummaryPageProps = {
   searchParams: Promise<{
@@ -25,9 +25,7 @@ export default async function BuilderSummaryPage({
   const params = await searchParams;
   const name = params.name?.trim() ?? "Sin nombre";
   const category: Category =
-    params.category === "mujer" || params.category === "otro"
-      ? params.category
-      : "hombre";
+    params.category === "mujer" ? "mujer" : "hombre";
   const parsedCharacterIndex = Number(params.characterIndex ?? 0);
   const safeCharacterIndex = Number.isInteger(parsedCharacterIndex)
     ? parsedCharacterIndex

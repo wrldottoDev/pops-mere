@@ -7,7 +7,7 @@ import { IceCreamViewer } from "@/components/IceCreamViewer";
 import { characters } from "@/data/characters";
 import { icecreams, type ConeType } from "@/data/icecreams";
 
-type Category = "hombre" | "mujer" | "otro";
+type Category = "hombre" | "mujer";
 
 type StepTwoBuilderProps = {
   initialName: string;

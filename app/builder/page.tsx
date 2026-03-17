@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { CharacterCarousel } from "@/components/CharacterCarousel";
 import { characters } from "@/data/characters";
 
-type Category = "hombre" | "mujer" | "otro";
+type Category = "hombre" | "mujer";
 
 function getNextIndex(currentIndex: number, direction: number, total: number) {
   return (currentIndex + direction + total) % total;
@@ -87,17 +87,6 @@ export default function BuilderPage() {
             Mujer
           </button>
 
-          <button
-            type="button"
-            onClick={() => changeCategory("otro")}
-            className={`flex-1 rounded-full px-4 py-3 font-fredoka text-sm text-white transition sm:text-base ${
-              category === "otro"
-                ? "bg-[var(--color-orange)]"
-                : "bg-[var(--color-blue)]"
-            }`}
-          >
-            Otro
-          </button>
         </div>
 
         <section className="mt-8 rounded-[28px] bg-white p-6 shadow-lg sm:p-7">
