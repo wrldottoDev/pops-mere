@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-turquoise: #1aa6a4;
+  --color-orange: #f06c00;
+  --color-blue: #1a86b0;
+  --color-red: #e8242a;
+  --color-light: #ededed;
+  --color-white: #ffffff;
+}
+
+.font-fredoka {
+  font-family: var(--font-fredoka), sans-serif;
+}
+
+.font-fredoka-condensed {
+  font-family: var(--font-fredoka-condensed), sans-serif;
+}
+
+.font-chewy {
+  font-family: var(--font-chewy), sans-serif;
+}
+
+.font-chau {
+  font-family: var(--font-chau), sans-serif;
 }
 
 @theme inline {
@@ -22,5 +42,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
