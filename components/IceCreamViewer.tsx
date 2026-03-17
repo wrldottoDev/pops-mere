@@ -114,10 +114,10 @@ export function IceCreamViewer({
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "spring", stiffness: 260, damping: 24 },
-              y: { type: "spring", stiffness: 250, damping: 22 },
-              opacity: { duration: 0.18 },
-              scale: { type: "tween", duration: 0.2 },
+              x: { type: "spring", stiffness: 170, damping: 24 },
+              y: { type: "spring", stiffness: 165, damping: 23 },
+              opacity: { duration: 0.3 },
+              scale: { type: "tween", duration: 0.32 },
             }}
             className="relative h-full w-full"
           >
@@ -127,7 +127,7 @@ export function IceCreamViewer({
               }}
               transition={{
                 type: "tween",
-                duration: coneDirection === 0 ? 0.24 : 0.38,
+                duration: coneDirection === 0 ? 0.34 : 0.5,
                 times: coneDirection === 0 ? [0, 0.55, 1] : [0, 0.4, 0.72, 1],
               }}
               className="relative h-full w-full"

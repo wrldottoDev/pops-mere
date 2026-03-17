@@ -69,9 +69,9 @@ export function CharacterCarousel({
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 260, damping: 26 },
-            opacity: { duration: 0.2 },
-            scale: { type: "tween", duration: 0.22 },
+            x: { type: "spring", stiffness: 170, damping: 24 },
+            opacity: { duration: 0.32 },
+            scale: { type: "tween", duration: 0.34 },
           }}
         >
           <Image

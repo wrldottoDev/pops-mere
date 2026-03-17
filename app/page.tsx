@@ -21,11 +21,11 @@ export default function Home() {
 
         <div className="mt-8 flex w-full flex-col gap-3 sm:mt-10 sm:flex-row sm:justify-center">
           <a
-            href="/menu.pdf"
-            download
+            href="/pdf/BRIEF.pdf"
+            download="BRIEF.pdf"
             className="flex w-full items-center justify-center rounded-full bg-[var(--color-orange)] px-6 py-3 text-center font-fredoka text-sm text-white transition-transform duration-200 hover:scale-[1.02] sm:w-auto sm:min-w-[180px] sm:text-base"
           >
-            Descargar PDF
+            BRIEF
           </a>
 
           <Link
